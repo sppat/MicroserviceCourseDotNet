@@ -10,7 +10,7 @@ public class EventModel
     public string Id { get; set; }
     public DateTime TimeStamp { get; set; }
     public Guid AggregateIdentifier { get; set; }
-    public string TypAggregateType { get; set; }
+    public string TypeAggregateType { get; set; }
     public int Version { get; set; }
     public string EventType { get; set; }
     public BaseEvent EventData { get; set; }

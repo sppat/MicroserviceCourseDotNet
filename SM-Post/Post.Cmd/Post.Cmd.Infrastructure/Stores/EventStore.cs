@@ -36,7 +36,7 @@ public class EventStore : IEventStore
             {
                 TimeStamp = DateTime.Now,
                 AggregateIdentifier = aggregateId,
-                TypAggregateType = nameof(PostAggregate),
+                TypeAggregateType = nameof(PostAggregate),
                 Version = version,
                 EventType = eventType,
                 EventData = @event
