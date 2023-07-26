@@ -37,6 +37,7 @@ var builder = WebApplication.CreateBuilder(args);
     dispatcher.RegisterHandler<EditCommentCommand>(commandHandler.HandleAsync);
     dispatcher.RegisterHandler<RemoveCommentCommand>(commandHandler.HandleAsync);
     dispatcher.RegisterHandler<DeletePostCommand>(commandHandler.HandleAsync);
+    dispatcher.RegisterHandler<RestoreReadDbCommand>(commandHandler.HandleAsync);
 
     builder.Services.AddSingleton<ICommandDispatcher>(_ => dispatcher);
 }
